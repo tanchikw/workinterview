@@ -1,0 +1,16 @@
+d = input()
+s= d.lower()
+j = 0
+i = 1
+p = ''
+while j <= len(s)-1:
+    if s.count(s[j]) == 1:
+        p += "("
+        i = j
+        j += 1
+    elif s.count(s[j]) != 1:
+        p += ")"
+        i = j
+        j += 1
+    
+print(p)
